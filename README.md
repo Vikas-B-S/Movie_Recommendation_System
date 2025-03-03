@@ -8,22 +8,58 @@ This project builds a Movie Recommendation System using Python, Pandas, Matplotl
 
 The project utilizes two datasets:
 
-[movies.csv] – Contains metadata for movies (e.g., movie ID, title, genres).
+[movies.csv](https://github.com/Vikas-B-S/Movie_Recommendation_System/blob/main/movies.csv) – Contains metadata for movies (e.g., movie ID, title, genres).
 
-[ratings.csv] – Contains user ratings for movies (e.g., user ID, movie ID, rating score).
+[ratings.csv](https://github.com/Vikas-B-S/Movie_Recommendation_System/blob/main/ratings.csv) – Contains user ratings for movies (e.g., user ID, movie ID, rating score).
 
-🛠️ Features Implemented
+# 🛠️ Features Implemented
 
-1️⃣ Data Preprocessing & Cleaning
+## 1️⃣ Data Preprocessing & Cleaning
 
-Merged movies.csv and ratings.csv for analysis.
+- Merged movies.csv and ratings.csv for analysis.
+- Removed duplicates and missing values to improve data integrity.
+- Standardized data for efficient processing.
 
-Removed duplicates and missing values to improve data integrity.
+## 2️⃣ Exploratory Data Analysis (EDA)
 
-Standardized data for efficient processing.
+- Identified top-rated and most-rated movies.
+- Visualized trending movies and rating distributions using Matplotlib & Seaborn.
 
-2️⃣ Exploratory Data Analysis (EDA)
+## 3️⃣ Recommendation System Development
 
-Identified top-rated and most-rated movies.
+### Popularity-Based Recommendation
 
-Visualized trending movies and rating distributions using Matplotlib & Seaborn.
+- Suggests top movies based on genre and rating threshold.
+- Returns the highest-rated movies within a selected genre.
+
+### Collaborative Filtering (User-Based)
+
+- Uses K-Nearest Neighbors (KNN) and Cosine Similarity to recommend movies based on similar users' preferences.
+- Constructs a user-movie rating matrix to find similarities.
+
+# 📊 Technologies Used
+
+- Programming Language: Python
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn
+- Machine Learning Techniques: KNN, Cosine Similarity
+
+# 🚀 How to Run
+
+Clone this repository:
+```
+git clone https://github.com/Vikas-B-S/Movie_Recommendation_System.git
+cd Movie_Recommendation_System
+```
+Install dependencies:
+```
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+Run the Jupyter Notebook (Mid_Project_01.ipynb) to execute the recommendation models.
+
+# 📌 Future Improvements
+
+- Implement content-based filtering for personalized recommendations.
+- Enhance the system with deep learning models (e.g., Neural Networks).
+- Deploy the recommendation system as a web application.
+
+## 💡 Feel free to fork this repo and contribute to improving the recommendation system! 🚀
